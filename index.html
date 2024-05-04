@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact EmailJS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-full bg-blue-200 flex justify-center items-center text-center">
+  <section class="w-72 p-10 flex flex-col justify-center items-center rounded-lg border-2 border-white mt-28">
+    <h1 class="text-blue-950 font-bold text-xl text-nowrap mb-3">Contact Me</h1>
+    <form id="contact-form" class="flex flex-col gap-1">
+      <label for="name" class="text-left">Nome:</label>
+      <input class="rounded-md" type="text" name="name" id="name" maxlength="12" required>
+      <label for="message" class="text-left">Email:</label>
+      <input class="rounded-md" type="email" name="email" id="email" required>
+      <label for="message" class="text-left">Mensagem:</label>
+      <textarea class="rounded-md resize-none" maxlength="200" name="message" id="message" required cols="30" rows="10"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script text="text/javascript" src="./src/scripts/emailjs.js"></script>
+</body>
+</html>
